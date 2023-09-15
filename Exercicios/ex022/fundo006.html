@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundo fixo de tela</title>
+
+    <style>
+        body{
+          height: 100vh;
+          background-color: black;
+          background-image: url(imagens/wallpaper002.jpg);  
+          background-repeat: no-repeat;
+          background-position: center top;
+          background-size: cover; /* Por padrão o backgorund-size é 'auto' */ 
+          background-attachment: fixed; /* Serve para manter a imagemd e fundo parada enquando desce ou sobe o conteudo de um site ou se a imagem vai desde e subir junto */
+
+          /* Shorthand - Background 
+                color > image > position > repeat > [SIZE] TEM Q FAZER SEPARADO > attachment
+          */
+          background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
+        }
+
+        main{
+            background-color: white;
+            width: 400px;
+            padding: 10px;
+            margin: auto;
+            border: 1px solid darkblue;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de imagem de fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Corporis quod nostrum ipsum at fugiat totam aut sint est debitis neque. Dolorum quia, quidem dolores nisi rem quam provident iure iste?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio harum quaerat dignissimos quod ipsum nisi autem iste veniam aliquam sequi officiis debitis nemo blanditiis modi aliquid, voluptates accusamus vero excepturi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error, ipsa eaque? Pariatur, exercitationem corrupti nam sit reiciendis labore, temporibus fugiat quae dolores consequuntur adipisci numquam vero nobis blanditiis, aperiam amet.</p>
+    </main>       
+</body>
+</html>
