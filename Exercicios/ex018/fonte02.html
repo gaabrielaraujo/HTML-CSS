@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes Externas</title>
+    <!-- O site 'DAFONT' é o site utilizado para pegar fontes externas que não estão no 'Google Fontes'-->
+
+    <!-- Caso queira retirar um fonta de uma IMAGEM, usar o site 'whatfont'-->
+    <style>
+        /* Para utilizar a fontes personalizada, deve-se utilizar da maneira abaixo aonde, exatamente, ela está */
+
+        @font-face {
+            font-family:'coracao' ;
+            src: url('fontes-personalizadas/HEARRG__.TTF') format(truetype);
+            font-weight: normal;
+            font-style: normal;
+            
+
+            /* 
+                    Tipos de 'format()'
+                - opentype (otf)
+                - truetype (ttf)
+                - embedded-opentype
+                - truetype-aat (Apple Advanced Typography)
+                - svg            
+            */ 
+
+        }
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1{
+            font-family: 'coracao';
+            font-size: 3em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Título</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas neque dicta soluta aperiam laborum sint voluptatum exercitationem ut illum qui, maiores modi dolor accusantium maxime laboriosam, laudantium corrupti consequuntur eos.</p>   
+</body>
+</html>

@@ -1,0 +1,48 @@
+@charset "UTF-8"
+    
+/* 
+    HTML 'ID'= CSS '#'
+    HTML 'CLASS' = CSS '.'
+*/
+
+h1{
+    color: rgb(12, 48, 36) ;
+}
+
+h1#principal{
+    text-align: center;
+    background-color: rgb(2, 230, 154);
+    color: white;
+}
+
+h2{
+    color:rgb(45, 82, 69) ;
+}
+
+/*---------------- CLASSES --------------- */
+
+h2.basico{
+    color: rgb(1, 107, 18); 
+    font-weight: bold;  
+}
+
+h2.intermediario{
+    color: rgb(150, 177, 0);    
+}
+
+h2.avançado{
+    color: rgb(197, 39, 0); 
+}
+
+/* Se configurar uma classe sem indicar a TAG antes, ela pode ser atribuída a qualquer outra TAG */
+.destaque{
+    background-color: rgb(0, 56, 177);
+}
+ 
+/*---------------- CLASSES --------------- */
+
+body {
+
+    background-color: rgb(0, 153, 99);
+    font-family: Arial, Helvetica, sans-serif;
+}

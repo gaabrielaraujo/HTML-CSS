@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+
+    <style>
+
+        /*  RESUMINDO (SELETORES PERSONALIZADOS)
+
+            # = ID
+            . = CLASS
+            : = PSEUDO-CLASS
+            :: = PSEUDO-ELEMENTO
+            > = CHILDREN
+        */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a{
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Essa 'Pseudo-Classe' indica os elementos do sites que já foram visitados, neste caso, irão ficar marcados com a seguinte cor. */
+        a:visited{
+            color: darkred;
+        }
+
+        a:hover{
+            color: black;
+            text-decoration: underline;
+        }
+
+        /* Essa 'Pseudo-Classe' indica que quando eu clicar no link, ira ficar da seguinte cor (mas assim que eu 'soltar o click' vai voltar ao que foi configurado antes) */
+
+        a:active{
+            color: yellow;
+        }
+
+        /*-----Pseudo Elementos '::'------*/
+        /* São elementos que conseguem ser introduzidos ao corpo sem precisarem estar presentes no corpo, mas só no estilo. */
+
+        .especial::before{
+            content /*(conteudo) */: '¹²³';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgray;
+        }
+
+        .especial::after{
+            content: '¹²³';
+        }
+
+        .especial{
+            background-color: rgb(160, 67, 67);  
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>  
+    <ul>
+        <li><a href="gustavoguanabara.github.io">Repositório GITHUB</a></li>
+        <li><a href="http://youtube.com/cursoemvideo/" class="especial">Canal do YT</a></li>
+        <li><a href="http://www.cursoemvideo.com" class="especial">Site de CursoemVideo</a></li>
+    </ul> 
+</body>
+</html>
